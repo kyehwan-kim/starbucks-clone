@@ -235,7 +235,7 @@ header .badges .badge img {
 .visual {
   position: relative;
   background-image: url(../images/visual_bg.jpg);
-  background-size: 100% 100%;
+  background-size: 106% 100%;
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 120px;
@@ -257,12 +257,13 @@ header .badges .badge img {
 }
 
 .visual .inner .slogan img {
+  display: block;
   width: 340px;
 }
 
 .visual .inner .slogan .btn {
   position: absolute;
-  top: 240px;
+  top: 250px;
 }
 
 .visual .inner img {
@@ -295,12 +296,13 @@ header .badges .badge img {
 
 .notice .notice-line {
   position: relative;
+  font-weight: 700;
 }
 
 .notice .notice-line .bg-left {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 50%;
   height: 100%;
   background-color: #111111;
@@ -308,8 +310,8 @@ header .badges .badge img {
 
 .notice .notice-line .bg-right {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 100%;
   background-color: #f6f5ef;
@@ -332,9 +334,8 @@ header .badges .badge img {
 
 .notice .notice-line .inner .inner__left h1 {
   position: absolute;
-  left: 0px;
+  left: 0;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .notice .notice-line .inner .inner__left div {
@@ -368,7 +369,6 @@ header .badges .badge img {
   position: absolute;
   right: 120px;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .notice .notice-line .inner .inner__right a {
@@ -394,7 +394,7 @@ header .badges .badge img {
 }
 .rewards .inner .rewards__logo {
   display: flex;
-  flex-basis: 260px;
+  width: 260px;
   justify-content: center;
   align-items: center;
 }
@@ -404,6 +404,7 @@ header .badges .badge img {
 }
 .rewards .inner .rewards__items {
   flex-grow: 1;
+  padding-right: 40px;
 }
 
 .rewards .inner .rewards__items .rewards__items__register {
@@ -416,7 +417,7 @@ header .badges .badge img {
   font-size: 17px;
   color: white;
 }
-.rewards .inner .rewards__items .rewards__items__register p .subject {
+.rewards .inner .rewards__items .rewards__items__register p.subject {
   font-size: 26px;
   margin-bottom: 10px;
 }
@@ -427,9 +428,9 @@ header .badges .badge img {
 }
 .rewards .inner .rewards__items .rewards__items__register .buttons .btn--register {
   background-color: #00704a;
-  border-color: white;
+  border-color: #00704a;
   color: white;
-  font-size: 14px;
+  margin-right: 6px;
   font-weight: 700;
 }
 .rewards .inner .rewards__items .rewards__items__register .buttons .btn--login,
