@@ -819,3 +819,34 @@ header .badges .badge img {
 .store:hover .inner .store__img-4 {
   opacity: 1;
 }
+/* FOOTER MENU */
+.inner {
+}
+
+.inner .footer__menu {
+  display: flex;
+  position: absolute;
+}
+
+.inner .footer__menu .left {
+  width: 90%;
+}
+
+.inner .footer__menu .left .menu {
+}
+
+.inner .footer__menu .left .menu > li {
+}
+
+.inner .footer__menu .left .menu > li > ul {
+}
+
+.inner .footer__menu .left .menu > li > ul > a {
+}
+
+.inner .footer__menu .left .menu > li > ul > li {
+}
+
+.inner .footer__menu .right {
+  width: 10%;
+}
