@@ -44,11 +44,37 @@ img {
   color: #076443;
   border-color: #076443;
   transition: 0.6s;
+  cursor: pointer;
 }
 
 .btn--light-green:hover {
   background-color: #076443;
   border-color: black;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn--brown {
+  color: #633510;
+  border-color: #633510;
+  transition: 0.6s;
+}
+
+.btn--brown:hover {
+  background-color: #633510;
+  color: white;
+  text-decoration: underline;
+}
+
+.btn--gold {
+  color: #966932;
+  border-color: #966932;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--gold:hover {
+  background-color: #966932;
   color: white;
   text-decoration: underline;
 }
@@ -461,4 +487,104 @@ header .badges .badge img {
   bottom: 0;
 }
 .rewards .inner .rewards__items .rewards__items__card .buttons .btn--login {
+}
+
+/* ELSALVADOR */
+.elsalvador {
+  position: relative;
+  height: 570px;
+  background-image: url("../images/elsalvador_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.elsalvador .inner {
+}
+
+.elsalvador .inner .elsalvador__item {
+  position: absolute;
+  width: 310px;
+  top: 100px;
+  left: 100px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.elsalvador .inner .elsalvador__contents {
+  position: absolute;
+  width: 339px;
+  top: 180px;
+  left: 600px;
+  transform: translateX(900px);
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.elsalvador:hover .inner .elsalvador__item,
+.elsalvador:hover .inner .elsalvador__contents {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.elsalvador .inner .elsalvador__contents .item-text {
+}
+.elsalvador .inner .elsalvador__contents .btn.btn--brown {
+  margin-top: 40px;
+}
+
+/* ETHIOPIA */
+.ethiopia {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/ethiopia_bg.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.ethiopia::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/ethiopia_before.png");
+  width: 425px;
+  height: 404px;
+  bottom: 0px;
+  left: -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ethiopia::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/ethiopia_after.png");
+  width: 361px;
+  height: 404px;
+  bottom: 0px;
+  right: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ethiopia .inner {
+}
+
+.ethiopia .inner .ethiopia__contents {
+  position: absolute;
+  width: 496px;
+  left: 0px;
+  top: 120px;
+}
+
+.ethiopia .inner .ethiopia__item {
+  position: absolute;
+  left: -500px;
+}
+
+.ethiopia .inner .btn.btn--gold {
+  position: absolute;
+  left: 260px;
+  top: 270px;
 }
