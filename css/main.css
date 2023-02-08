@@ -79,6 +79,32 @@ img {
   text-decoration: underline;
 }
 
+.btn--white {
+  border-color: #fff;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--white:hover {
+  background-color: #fff;
+  color: black;
+  text-decoration: underline;
+}
+
+.btn--black {
+  border-color: #000;
+  color: #000;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn--black:hover {
+  background-color: #000;
+  color: white;
+  text-decoration: underline;
+}
+
 /* HEADER */
 header {
   position: fixed;
@@ -554,6 +580,7 @@ header .badges .badge img {
   left: -50px;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
 }
 
 .ethiopia::after {
@@ -566,6 +593,13 @@ header .badges .badge img {
   right: 0px;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.ethiopia:hover::before,
+.ethiopia:hover::after {
+  transition: 1.5s;
+  opacity: 1;
 }
 
 .ethiopia .inner {
@@ -581,10 +615,184 @@ header .badges .badge img {
 .ethiopia .inner .ethiopia__item {
   position: absolute;
   left: -500px;
+  opacity: 0;
+}
+
+.ethiopia:hover .inner .ethiopia__item {
+  transition: 1.5s;
+  transition-delay: 0.8s;
+  opacity: 1;
 }
 
 .ethiopia .inner .btn.btn--gold {
   position: absolute;
   left: 260px;
   top: 270px;
+}
+
+/* FAVORITE */
+.favorite {
+  position: relative;
+  height: 800px;
+  background-image: url("../images/fav_bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.favorite .inner {
+}
+
+.favorite .inner .favorite__contents-1 {
+  position: absolute;
+  width: 258px;
+  top: 120px;
+  left: 110px;
+  transition: 2s;
+  transform: translateX(-700px);
+  opacity: 0;
+}
+
+.favorite .inner .favorite__contents-2 {
+  position: absolute;
+  width: 362px;
+  top: 370px;
+  transition: 2.5s;
+  transform: translateX(-700px);
+  opacity: 0;
+}
+
+.favorite:hover .inner .favorite__contents-1,
+.favorite:hover .inner .favorite__contents-2 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.favorite .inner .favorite__img {
+  position: absolute;
+  width: 912px;
+  top: 100px;
+  left: 450px;
+}
+
+.favorite .inner .btn.btn--white {
+  position: absolute;
+  top: 580px;
+  left: 240px;
+}
+
+/* MAGAZINE */
+.magazine {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/magazine_bg.png");
+  background-size: cover;
+  background-position: center 50px;
+  background-repeat: no-repeat;
+}
+
+.magazine .inner {
+}
+
+.magazine .inner .magazine__text {
+  position: absolute;
+  width: 588px;
+  top: 175px;
+  left: 60px;
+}
+
+.magazine .inner .magazine__img {
+  position: absolute;
+  width: 348px;
+  left: 700px;
+  top: 0px;
+  transform: translate(0);
+  transition: 1.5s;
+  opacity: 0;
+}
+
+.magazine:hover .inner .magazine__img {
+  opacity: 1;
+}
+
+.magazine .inner .btn.btn--black {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+
+/* FIND STORE */
+.store {
+  position: relative;
+  height: 400px;
+  background-image: url("../images/store_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.store .inner {
+}
+
+.store .inner .store__text-1 {
+  position: absolute;
+  width: 385px;
+  top: 100px;
+  left: 700px;
+  transition: 2s;
+  transform: translateX(900px);
+  opacity: 0;
+}
+
+.store .inner .store__text-2 {
+  position: absolute;
+  width: 366px;
+  top: 180px;
+  left: 700px;
+  transition: 2.5s;
+  transform: translateX(900px);
+  opacity: 0;
+}
+
+.store .inner .store__img-1 {
+  position: absolute;
+  width: 366px;
+  top: 0px;
+  left: 70px;
+}
+
+.store .inner .store__img-2 {
+  position: absolute;
+  width: 228px;
+  top: 150px;
+  left: 300px;
+}
+
+.store .inner .store__img-3 {
+  position: absolute;
+  width: 348px;
+  top: -60px;
+  left: 460px;
+}
+
+.store .inner .store__img-4 {
+  position: absolute;
+  width: 230px;
+  top: 300px;
+  right: -100px;
+}
+
+.store .inner .btn.btn--black {
+  position: absolute;
+  top: 300px;
+  left: 700px;
+  transition: 3s;
+  transform: translateX(900px);
+  opacity: 0;
+}
+
+.store:hover .inner .store__text-1,
+.store:hover .inner .store__text-2,
+.store:hover .inner .btn.btn--black {
+  transform: translateX(0px);
+  opacity: 1;
 }
