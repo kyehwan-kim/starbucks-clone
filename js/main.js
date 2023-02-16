@@ -46,7 +46,11 @@ const swiperPromotion = new Swiper(".notice .promotion .swiper", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 5000,
     disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".promotion .swiper-pagination",
+    clickable: true,
   },
 });

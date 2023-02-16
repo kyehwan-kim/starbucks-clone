@@ -478,9 +478,7 @@ header .badges .badge img {
   opacity: 1;
 }
 
-.notice .promotion .swiper .swiper-pagination {
-  width: 100px;
-  height: 50px;
+.notice .promotion .swiper-pagination {
 }
 
 .notice .promotion .swiper .swiper-button-prev,
