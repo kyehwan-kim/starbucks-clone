@@ -67,3 +67,69 @@ function controlAutoPlay() {
     swiperPromotion.autoPlay.stop();
   }
 }
+
+//Toggle Promotion
+const promotionSection = document.querySelector(".promotion");
+const promotionToggleBtn = document.querySelector(".notice .toggle-promotion");
+
+promotionToggleBtn.addEventListener("click", function () {
+  if (promotionSection.classList.contains("hide")) {
+    promotionSection.classList.remove("hide");
+    promotionToggleBtn.classList.add("show");
+  } else {
+    promotionSection.classList.add("hide");
+    promotionToggleBtn.classList.remove("show");
+  }
+});
+
+//애니메이션 파트
+// Visual
+window.onload = function () {
+  const visualSection = document.querySelector(".visual");
+  visualSection.classList.add("animate");
+};
+
+//애니메이션 스크롤 파트
+//엘사바도르
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 264) {
+    const elsalvadorSection = document.querySelector(".elsalvador");
+    elsalvadorSection.classList.add("animate");
+  }
+});
+
+//에티오피아
+window.addEventListener("scroll", function () {
+  // console.log(scrollY);
+  if (window.scrollY > 765) {
+    const ethiopiaSection = document.querySelector(".ethiopia");
+    ethiopiaSection.classList.add("animate");
+  }
+});
+
+//Favorite
+window.addEventListener("scroll", function () {
+  // console.log(scrollY);
+  if (window.scrollY > 1050) {
+    const favoriteSection = document.querySelector(".favorite");
+    favoriteSection.classList.add("animate");
+  }
+});
+
+//MAGAZINE
+window.addEventListener("scroll", function () {
+  // console.log(scrollY);
+  if (window.scrollY > 1860) {
+    const magazineSection = document.querySelector(".magazine");
+    magazineSection.classList.add("animate");
+  }
+});
+
+//FIND STORE
+window.addEventListener("scroll", function () {
+  console.log(scrollY);
+  if (window.scrollY > 2370) {
+    const storeSection = document.querySelector(".store");
+    storeSection.classList.add("animate");
+  }
+});
