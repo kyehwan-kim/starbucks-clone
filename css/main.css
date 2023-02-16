@@ -448,7 +448,7 @@ header .badges .badge img {
 
 .notice .promotion .swiper {
   position: absolute;
-  width: calc(810px * 3 + 20px);
+  width: calc(810px * 3 + 50px);
   height: 553px;
   text-align: center;
   left: 50%;
@@ -460,6 +460,12 @@ header .badges .badge img {
 }
 
 .notice .promotion .swiper .swiper-wrapper .swiper-slide {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.notice .promotion .swiper .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
 }
 
 /* REWARDS */

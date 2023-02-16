@@ -46,7 +46,7 @@ const swiperPromotion = new Swiper(".notice .promotion .swiper", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 2500,
     disableOnInteraction: false,
   },
 });
