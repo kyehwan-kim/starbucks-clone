@@ -61,10 +61,10 @@ const swiperPromotion = new Swiper(".notice .promotion .swiper", {
 
 //AutoPlay 컨트롤
 function controlAutoPlay() {
-  if (swiperPromotion.AutoPlay.running === true) {
-    swiperPromotion.autoPlay.stop();
+  if (swiperPromotion.autoplay.running === false) {
+    swiperPromotion.autoplay.start();
   } else {
-    swiperPromotion.autoPlay.start();
+    swiperPromotion.autoplay.stop();
   }
 }
 
