@@ -61,10 +61,10 @@ const swiperPromotion = new Swiper(".notice .promotion .swiper", {
 
 //AutoPlay 컨트롤
 function controlAutoPlay() {
-  if (swiperPromotion.autoPlay.running === false) {
-    swiperPromotion.autoPlay.start();
-  } else {
+  if (swiperPromotion.AutoPlay.running === true) {
     swiperPromotion.autoPlay.stop();
+  } else {
+    swiperPromotion.autoPlay.start();
   }
 }
 
@@ -127,7 +127,7 @@ window.addEventListener("scroll", function () {
 
 //FIND STORE
 window.addEventListener("scroll", function () {
-  console.log(scrollY);
+  // console.log(scrollY);
   if (window.scrollY > 2370) {
     const storeSection = document.querySelector(".store");
     storeSection.classList.add("animate");
