@@ -4,6 +4,17 @@
 //범위 좁혀서 선택하기
 const searchEl = document.querySelector(".search");
 const searchInputEl = searchEl.querySelector("input");
+// const searchIconEl = searchEl.querySelector("span");
+
+// let isNotSearchClick = false;
+
+// document.addEventListener("click", function (e) {
+//   if (e.target.classList.contains("material-symbols-outlined")) {
+//     isNotSearchClick = true;
+//   } else {
+//     isNotSearchClick = false;
+//   }
+// });
 
 searchEl.addEventListener("click", function () {
   searchInputEl.focus();
@@ -17,4 +28,25 @@ searchInputEl.addEventListener("focus", function () {
 //통합검색창 외부에서 클릭하면 다시 좁혀지기
 searchInputEl.addEventListener("blur", function () {
   searchInputEl.setAttribute("placeholder", "");
+});
+
+//SWIPER
+//SWIPER NOTICE
+const swiperNotice = new Swiper(".notice .notice-line .inner .inner__left .swiper", {
+  direction: "vertical",
+  loop: true,
+  autoplay: true,
+});
+
+//SWIPER PROMOTION
+const swiperPromotion = new Swiper(".notice .promotion .swiper", {
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
 });

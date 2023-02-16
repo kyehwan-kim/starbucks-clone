@@ -389,10 +389,16 @@ header .badges .badge img {
   font-size: 16px;
 }
 
-.notice .notice-line .inner .inner__left div {
+.notice .notice-line .inner .inner__left .swiper {
   position: absolute;
   left: 80px;
+  height: 62px;
   font-size: 14px;
+}
+
+.notice .notice-line .inner .inner__left .swiper .swiper-wrapper .swiper-slide {
+  height: 62px;
+  line-height: 62px;
 }
 
 .notice .notice-line .inner .inner__left a {
@@ -431,6 +437,29 @@ header .badges .badge img {
 .notice .notice-line .inner .inner__right a span {
   font-size: 36px;
   display: block;
+}
+
+/* PROMOTION */
+.notice .promotion {
+  position: relative;
+  height: 658px;
+  background-color: #f6f5ef;
+}
+
+.notice .promotion .swiper {
+  position: absolute;
+  width: calc(810px * 3 + 20px);
+  height: 553px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+
+.notice .promotion .swiper .swiper-wrapper {
+}
+
+.notice .promotion .swiper .swiper-wrapper .swiper-slide {
 }
 
 /* REWARDS */
