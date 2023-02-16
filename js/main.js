@@ -46,11 +46,24 @@ const swiperPromotion = new Swiper(".notice .promotion .swiper", {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".promotion .swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    prevEl: ".promotion .swiper-button-prev",
+    nextEl: ".promotion .swiper-button-next",
+  },
 });
+
+//AutoPlay 컨트롤
+function controlAutoPlay() {
+  if (swiperPromotion.autoPlay.running === false) {
+    swiperPromotion.autoPlay.start();
+  } else {
+    swiperPromotion.autoPlay.stop();
+  }
+}
